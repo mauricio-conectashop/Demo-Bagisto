@@ -29,7 +29,7 @@ module.exports = {
 
         extend: {
             colors: {
-                navyBlue: "#060C3B",
+                navyBlue: "#93cb57",
                 lightOrange: "#F6F2EB",
                 darkGreen: '#40994A',
                 darkBlue: '#0044F2',
@@ -39,6 +39,7 @@ module.exports = {
             fontFamily: {
                 poppins: ["Poppins"],
                 dmserif: ["DM Serif Display"],
+                montserrat: ["Montserrat", "sans-serif"],
             },
         }
     },

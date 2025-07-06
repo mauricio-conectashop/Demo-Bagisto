@@ -42,7 +42,9 @@ export default {
          * Registration of all global validators.
          */
         Object.keys(AllRules).forEach((rule) => {
-            defineRule(rule, AllRules[rule]);
+            if(typeof AllRules[rule] == 'function') {
+                defineRule(rule, AllRules[rule]);
+            }
         });
 
         /**
