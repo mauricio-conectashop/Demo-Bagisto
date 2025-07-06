@@ -49,6 +49,9 @@ module.exports = {
     safelist: [
         {
             pattern: /icon-/,
-        }
+        },
+        {
+            pattern: /col-span-(\d+)/, // isso já cobre col-span-1 até col-span-12
+        },
     ]
 };
