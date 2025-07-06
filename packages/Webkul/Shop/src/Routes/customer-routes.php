@@ -12,6 +12,10 @@ use Webkul\Shop\Http\Controllers\Customer\ResetPasswordController;
 use Webkul\Shop\Http\Controllers\Customer\SessionController;
 use Webkul\Shop\Http\Controllers\DataGridController;
 
+Route::get("teste", function() {
+    echo "testado";
+});
+
 Route::group(['middleware' => ['locale', 'theme', 'currency']], function () {
 
     Route::prefix('customer')->group(function () {
