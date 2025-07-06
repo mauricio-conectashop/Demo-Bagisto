@@ -14,7 +14,7 @@
             class='grid gap-2.5 content-start w-full relative'
             v-if="mode != 'list'"
         >
-            <div class="relative overflow-hidden group max-w-[291px] max-h-[300px] rounded p-1">
+            <div class="overflow-hidden group max-w-[291px] max-h-[300px] rounded p-1">
 
                 {!! view_render_event('bagisto.shop.components.products.card.image.before') !!}
 
