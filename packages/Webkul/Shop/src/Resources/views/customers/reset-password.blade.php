@@ -40,7 +40,7 @@
         <div
             class="w-full max-w-[870px] m-auto px-[90px] p-16 border border-[#E9E9E9] rounded-xl max-md:px-8 max-md:py-8"
         >
-            <h1 class="text-4xl font-dmserif max-sm:text-2xl">
+            <h1 class="text-4xl font-poppins max-sm:text-2xl">
                 @lang('shop::app.customers.reset-password.title')
             </h1>
 

@@ -17,7 +17,7 @@
         >
             <div class="flex justify-between">
                 <h2
-                    class="text-3xl font-dmserif max-sm:text-2xl"
+                    class="text-3xl font-poppins max-sm:text-2xl"
                     v-text="title"
                 >
                 </h2>
