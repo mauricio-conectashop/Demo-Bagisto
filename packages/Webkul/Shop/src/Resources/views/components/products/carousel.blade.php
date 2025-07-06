@@ -45,7 +45,7 @@
 
             <div
                 ref="swiperContainer"
-                class="flex gap-8 [&>*]:flex-[0] mt-10 overflow-auto scroll-smooth scrollbar-hide max-sm:mt-5"
+                class="flex gap-8 [&>*]:flex-[0] mt-10 overflow-auto scroll-smooth scrollbar-hide max-sm:mt-5 p-1"
             >
                 <x-shop::products.card
                     class="min-w-[291px]"
