@@ -58,6 +58,9 @@ module.exports = {
         },
         {
             pattern: /grid-/
+        },
+        {
+            pattern: /p-/
         }
     ]
 };
