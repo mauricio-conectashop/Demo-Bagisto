@@ -48,8 +48,9 @@
                 class="flex gap-8 [&>*]:flex-[0] mt-10 overflow-auto scroll-smooth scrollbar-hide max-sm:mt-5 p-1"
             >
                 <x-shop::products.card
-                    class="min-w-[291px] shadow rounded-md p-4"
+                    class="min-w-[291px] rounded-md p-4"
                     v-for="product in products"
+                    style="box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;"
                 />
             </div>
 
