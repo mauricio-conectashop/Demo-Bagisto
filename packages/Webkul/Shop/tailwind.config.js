@@ -53,5 +53,8 @@ module.exports = {
         {
             pattern: /col-span-(\d+)/, // isso já cobre col-span-1 até col-span-12
         },
+        {
+            pattern: /^(sm|md|lg|xl|2xl):grid$/,
+        },
     ]
 };
