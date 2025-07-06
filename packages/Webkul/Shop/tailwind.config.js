@@ -56,5 +56,8 @@ module.exports = {
         {
             pattern: /^(sm|md|lg|xl|2xl):grid$/,
         },
+        {
+            pattern: /grid-/
+        }
     ]
 };
