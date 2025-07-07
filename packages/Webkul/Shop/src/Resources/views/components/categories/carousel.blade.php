@@ -66,7 +66,7 @@
                 </span>
 
                 <span
-                    class="flex items-center justify-center absolute top-9 -right-6 w-[50px] h-[50px] bg-white border border-black rounded-full transition icon-arrow-right-stylish text-2xl hover:bg-black hover:text-white max-lg:-right-7 cursor-pointer"
+                    class="flex items-center justify-center absolute top-9 -right-6 w-[50px] h-[50px] bg-white border border-black rounded-full transition mdi mdi-chevron-right text-2xl hover:bg-black hover:text-white max-lg:-right-7 cursor-pointer"
                     role="button"
                     aria-label="@lang('shop::components.carousel.next')"
                     tabindex="0"
