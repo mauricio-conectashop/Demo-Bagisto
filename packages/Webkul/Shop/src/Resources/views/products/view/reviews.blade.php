@@ -154,7 +154,7 @@
                 <template v-else>
                     <!-- Review Section Header -->
                     <div class="flex gap-4 items-center justify-between  max-sm:flex-wrap">
-                        <h3 class="font-dmserif text-3xl max-sm:text-xl">
+                        <h3 class="font-poppins text-3xl max-sm:text-xl">
                             @lang('shop::app.products.view.reviews.customer-review')
                         </h3>
                         
