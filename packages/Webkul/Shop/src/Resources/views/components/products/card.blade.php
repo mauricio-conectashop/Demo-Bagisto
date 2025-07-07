@@ -86,7 +86,7 @@
                         {!! view_render_event('bagisto.shop.components.products.card.add_to_cart.before') !!}
 
                         <button
-                            class="w-full absolute bottom-0 left-1/2 py-3 px-11 bg-navyBlue text-white text-xs font-medium cursor-pointer -translate-x-1/2 translate-y-14 group-hover:translate-y-0 transition-all duration-300 max-sm:translate-y-2.5 max-sm:group-hover:translate-y-2.5 max-lg:translate-y-2.5 max-sm:px-7 max-sm:py-2"
+                            class="w-full absolute bottom-0 rounded-b-xl left-1/2 py-3 px-11 bg-navyBlue text-white text-xs font-medium cursor-pointer -translate-x-1/2 translate-y-14 group-hover:translate-y-0 transition-all duration-300 max-sm:translate-y-2.5 max-sm:group-hover:translate-y-2.5 max-lg:translate-y-2.5 max-sm:px-7 max-sm:py-2"
                             :disabled="! product.is_saleable || isAddingToCart"
                             @click="addToCart()"
                         >
