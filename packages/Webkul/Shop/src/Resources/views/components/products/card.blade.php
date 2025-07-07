@@ -86,7 +86,7 @@
                         {!! view_render_event('bagisto.shop.components.products.card.add_to_cart.before') !!}
 
                         <button
-                            class="absolute bottom-4 left-1/2 py-3 px-11 bg-white rounded-xl text-navyBlue text-xs w-max font-medium cursor-pointer -translate-x-1/2 translate-y-14 group-hover:translate-y-0 transition-all duration-300 max-sm:translate-y-2.5 max-sm:group-hover:translate-y-2.5 max-lg:translate-y-2.5 max-sm:px-7 max-sm:py-2"
+                            class="w-full absolute bottom-0 left-1/2 py-3 px-11 bg-white rounded-xl text-navyBlue text-xs font-medium cursor-pointer -translate-x-1/2 translate-y-14 group-hover:translate-y-0 transition-all duration-300 max-sm:translate-y-2.5 max-sm:group-hover:translate-y-2.5 max-lg:translate-y-2.5 max-sm:px-7 max-sm:py-2"
                             :disabled="! product.is_saleable || isAddingToCart"
                             @click="addToCart()"
                         >
@@ -130,7 +130,7 @@
             class="flex gap-4 grid-cols-2 max-w-max relative max-sm:flex-wrap rounded overflow-hidden"
             v-else
         >
-            <div class="relative max-w-[250px] max-h-[258px] overflow-hidden group"> 
+            <div class="relative max-w-[250px] max-h-[258px] overflow-hidden group">
 
                 {!! view_render_event('bagisto.shop.components.products.card.image.before') !!}
 
@@ -168,7 +168,7 @@
                         {!! view_render_event('bagisto.shop.components.products.card.wishlist_option.before') !!}
 
                         @if (core()->getConfigData('general.content.shop.wishlist_option'))
-                            <span 
+                            <span
                                 class="flex justify-center items-center absolute top-5 ltr:right-5 rtl:left-5 w-[30px] h-[30px] bg-white rounded-md text-2xl cursor-pointer"
                                 role="button"
                                 aria-label="@lang('shop::app.components.products.card.add-to-wishlist')"
