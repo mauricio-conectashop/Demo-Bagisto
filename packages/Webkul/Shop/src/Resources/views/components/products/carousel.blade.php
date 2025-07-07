@@ -24,7 +24,7 @@
 
                 <div class="flex gap-8 justify-between items-center">
                     <span
-                        class="mdi mdi-chevron-left inline-block text-2xl cursor-pointer"
+                        class="mdi mdi-chevron-left text-navyBlue inline-block text-2xl cursor-pointer"
                         role="button"
                         aria-label="@lang('shop::app.components.products.carousel.previous')"
                         tabindex="0"
@@ -33,7 +33,7 @@
                     </span>
 
                     <span
-                        class="mdi mdi-chevron-right inline-block text-2xl cursor-pointer"
+                        class="mdi mdi-chevron-right text-navyBlue inline-block text-2xl cursor-pointer"
                         role="button"
                         aria-label="@lang('shop::app.components.products.carousel.next')"
                         tabindex="0"
