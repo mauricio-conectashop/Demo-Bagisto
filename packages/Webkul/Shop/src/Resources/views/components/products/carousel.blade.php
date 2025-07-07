@@ -33,7 +33,7 @@
                     </span>
 
                     <span
-                        class="icon-arrow-right-stylish rtl:icon-arrow-left-stylish inline-block text-2xl cursor-pointer"
+                        class="mdi mdi-chevron-right rtl:icon-arrow-left-stylish inline-block text-2xl cursor-pointer"
                         role="button"
                         aria-label="@lang('shop::app.components.products.carousel.next')"
                         tabindex="0"
