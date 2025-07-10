@@ -1,4 +1,4 @@
-name: Deploy para VPS Bagisto
+name: Deploy para VPS
 
 on:
   push:
