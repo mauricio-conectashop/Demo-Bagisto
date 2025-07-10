@@ -10,15 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Desabilita verificação do host SSH
-      run: |
-        mkdir -p ~/.ssh
-        echo -e "Host *\n\tStrictHostKeyChecking no\n\tUserKnownHostsFile=/dev/null\n" > ~/.ssh/config
-
-    - name: Deploy com rsync
-      run: |
-        rsync -avz --delete ./ root@31.97.172.158:/var/www/mauricio-farmacia/
-
     - name: Acessando a VPS e puxando alterações
       uses: appleboy/ssh-action@v0.1.6
       with:
