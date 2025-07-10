@@ -12,7 +12,8 @@ jobs:
     steps:
     - name: Deploy com rsync
       run: |
-        rsync -avz --delete ./ root@srv876473:/var/www/mauricio-farmacia/
+        rsync -avz --delete ./ root@vps:/var/www/mauricio-farmacia/
+
     - name: Acessando a VPS e puxando alterações
       uses: appleboy/ssh-action@v0.1.6
       with:
