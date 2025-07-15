@@ -9,15 +9,19 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
+    env:
+      SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      VPS_HOST: ${{ secrets.VPS_HOST }}
+      VPS_USER: ${{ secrets.VPS_USER }}
+
     steps:
-    - name: Desabilita verificação do host SSH
+    - uses: actions/checkout@v4
+    - name: Configura chave
       run: |
         mkdir -p ~/.ssh
-        echo -e "Host *\n\tStrictHostKeyChecking no\n\tUserKnownHostsFile=/dev/null\n" > ~/.ssh/config
-
-    - name: Deploy com rsync
-      run: |
-        rsync -avz --delete ./ root@31.97.172.158:/var/www/mauricio-farmacia/
+        echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
+        chmod 600 ~/.ssh/id_ed25519
+        ssh-keyscan -H "$VPS_HOST" >> ~/.ssh/known_hosts
 
     - name: Acessando a VPS e puxando alterações
       uses: appleboy/ssh-action@v0.1.6
