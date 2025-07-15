@@ -1,4 +1,4 @@
-name: Deploy to VPS
+name: Deploy to VPS 2
 on: [push]
 
 jobs:
